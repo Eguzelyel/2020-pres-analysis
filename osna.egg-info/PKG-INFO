@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: osna
+Version: 0.1.0
+Summary: IIT OSNA project
+Home-page: https://github.com/iit-cs579/main
+Author: A Student
+Author-email: student@example.com
+License: MIT license
+Description: # sample_project
+        
+        This is a sample project for CS579. See [Instructions.md](Instructions.md) to get started.
+        
+        This file should contain a high-level summary of your project. It is a condensed version of your report.
+        
+        # Introduction
+        
+        # Data
+        
+        # Methods
+        
+        # Results
+        
+        
+        
+Keywords: osna
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

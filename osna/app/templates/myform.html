@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Please select the candidate.</h2>
+<p>
+	<form action="" method="post" novalidate>
+		<input type="radio" name="options" id="sanders" value="Bernie Sanders"> Bernie Sanders </input><br>
+		<input type="radio" name="options" id="warren" value="Elizabeth Warren"> Elizabeth Warren </input><br>
+		<input type="radio" name="options" id="biden" value="Joe Biden"> Joe Biden </input><br>
+		<input type="radio" name="options" id="yang" value="Andrew Yang"> Andrew Yang </input><br>
+</p>
+
+<h2>Please enter the tweet you wish to analyze below:</h2>
+<form action="" method="post" novalidate>
+	<p>{{ form.input_field.label }}</p>
+	<p>
+		{{ form.input_field(size=20) }}
+	</p>
+	{{ form.submit() }}
+</form>
+{% endblock %}

@@ -1,0 +1,31 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - osna</title>
+      {% else %}
+      <title>OSNA Demo</title>
+      {% endif %}
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>Using Sentiment Analysis of Select 2020 Democratic Presidential
+Candidates to Predict Tweet Reach</h1>
+        <hr>
+        {% if form.errors %}
+        {{ form.errors }}
+        {% endif %}
+        
+        {% block content %}{% endblock %}
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        <br>
+    </body>
+</html>

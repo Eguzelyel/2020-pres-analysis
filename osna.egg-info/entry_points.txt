@@ -1,0 +1,9 @@
+[console_scripts]
+collect = osna.cli:collect
+evaluate = osna.cli:evaluate
+network = osna.cli:network
+osna = osna.cli:main
+stats = osna.cli:stats
+train = osna.cli:train
+web = osna.cli:web
+

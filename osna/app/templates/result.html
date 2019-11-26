@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+<div class="results">
+    <h2><u>Sentiment Analysis Results:</u></h2>
+    <div class="input">
+        <h3>The tweet being analyzed:</h3>
+        <p> "{{ input_tweet }}"</p>
+    </div>
+        <h3>Sentiment Score of the Tweet:</h3>
+        <p>
+            The tweet is {{ response['sentiment']['document']['label'] }} with a score of
+            {{ response['sentiment']['document']['score'] }}
+        </p>
+        <h3>Emotions of the Tweet:</h3>
+        <table>
+            <tr>
+                <th>Anger</th>
+                <th>Disgust</th>
+                <th>Fear</th>
+                <th>Joy</th>
+                <th>Sadness</th>
+            </tr>
+            <tr>
+                {% for emotion_desc in response['emotion']['document']['emotion'] %}
+                <td>{{ response['emotion']['document']['emotion'][emotion_desc] }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+        <h3>Keywords of the Tweet:</h3>
+        <table>
+            <tr>
+                <th>Keywords</th>
+                <th>Relevance Score</th>
+                <th>Count</th>
+            </tr>
+            {% for keyword in response['keywords'] %}
+                <tr>
+                    <td>{{ keyword['text'] }}</td>
+                    <td>{{ keyword['relevance'] }}</td>
+                    <td>{{ keyword['count'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <div class="Classification Results">
+            {% if reach_prediction == "1" %}
+                <h3>The prediction for this tweet by {{candidate}} : High reach tweet </h3>
+            {% elif reach_prediction == "-1"%}
+                <h3>The prediction for this tweet by {{candidate}} : Low reach tweet</h3>
+            {% endif %}
+        </div>
+    </div>
+    <br>
+    <button>
+        <a href="{{ url_for('index') }}">Analyze another tweet</a>
+    </button>
+</div>
+
+{% endblock %}
