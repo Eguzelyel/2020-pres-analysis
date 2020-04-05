@@ -5,7 +5,8 @@
 *Background:*
 
 Social media usage has increasingly become a daily part of our lives. It played a significant role in the 2016 Presidential election Both campaigns spent a combined $81 million on Facebook advertisements[5]. A good amount of political messaging is negative Of 69,500 ads between November 1-5 2016, 92% had either negative messages or focused on differences between the candidates. 
-Only 3% focused on positive messages about Clinton, and 5% focused on positive messages about Trump[1] Trump was accused of negative rhetoric but still won in 2016. 
+Only 3% focused on positive messages about Clinton, and 5% focused on positive messages about Trump[1]. Trump was accused of negative rhetoric but still won in 2016. 
+
 Was he was elected despite his negativity or did it actually help his campaign?
 
 *Problem Overview:*
