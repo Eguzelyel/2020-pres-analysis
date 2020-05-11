@@ -1,5 +1,7 @@
 # Predicting Tweet Reach of Select 2020 Presidential Candidates Using Sentiment Analysis
 
+[Full report here.](/docs/report.pdf)
+
 ## Introduction
 
 *Background:*
