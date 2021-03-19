@@ -23,7 +23,7 @@ matplotlib==3.1.1
 numpy==1.17.3
 pandas==0.25.3
 parse==1.12.1
-Pillow==6.2.1
+Pillow==8.1.1
 pyee==6.0.0
 PyJWT==1.7.1
 pyparsing==2.4.5
