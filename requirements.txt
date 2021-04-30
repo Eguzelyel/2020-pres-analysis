@@ -40,7 +40,7 @@ six==1.13.0
 soupsieve==1.9.5
 tqdm==4.38.0
 TwitterAPI==2.5.10
-urllib3==1.25.6
+urllib3==1.25.8
 w3lib==1.21.0
 websocket-client==0.48.0
 websockets==8.1
